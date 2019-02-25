@@ -1,6 +1,6 @@
-docker build -t playdude/multi-client:latest -t playdude/multi-client:$GIT_SHA -f ./client/DockerFile ./client
-docker build -t playdude/multi-server:latest -t playdude/multi-server:$GIT_SHA -f ./server/DockerFile ./server
-docker build -t playdude/multi-worker:latest -t playdude/multi-worker:$GIT_SHA -f ./worker/DockerFile ./worker
+docker build -t playdude/multi-client:latest -t playdude/multi-client:$GIT_SHA -f ./client/Dockerfile ./client
+docker build -t playdude/multi-server:latest -t playdude/multi-server:$GIT_SHA -f ./server/Dockerfile ./server
+docker build -t playdude/multi-worker:latest -t playdude/multi-worker:$GIT_SHA -f ./worker/Dockerfile ./worker
 
 docker push playdude/multi-client:latest
 docker push playdude/multi-server:latest
